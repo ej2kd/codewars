@@ -14,6 +14,3 @@ export const areYouPlayingBanjo = (name: string) => {
     ? `${name} plays banjo`
     : `${name} does not play banjo`;
 };
-
-const name = "Ringo";
-console.log(areYouPlayingBanjo(name));

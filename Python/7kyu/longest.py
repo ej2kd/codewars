@@ -10,4 +10,4 @@ def longest(a1, a2):
     a = "abcdefghijklmnopqrstuvwxyz"
     longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
     """
-    return ''.join(sorted(list(set(a1).union(set(a2)))))
+    return ''.join(sorted(set(a1 + a2)))

@@ -7,4 +7,4 @@ def digitize(n):
     35231 => [1,3,2,5,3]
     0 => [0]
     """
-    return list(map(int, reversed([* str(n)])))
+    return list(map(int, str(n)))[::-1]

@@ -8,7 +8,3 @@ n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 */
 export const powersOfTwo = (n: number): number[] =>
   Array.from({ length: n + 1 }, (_, i) => i).map((num) => Math.pow(2, num));
-
-const n = 10;
-const arr = [...Array(n).keys()];
-console.log(arr);

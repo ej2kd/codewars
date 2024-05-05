@@ -10,9 +10,4 @@ def digital_root(n):
     132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
     493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
     """
-    digit_sum = sum(int(digit) for digit in str(n))
-    length = len(str(digit_sum))
-    if length == 1:
-        return digit_sum
-
-    return digital_root(digit_sum)
+    return n if n < 10 else digital_root(sum(map(int, str(n))))
